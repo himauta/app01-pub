@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.6">
+
+<title> Dispatch MobileSite</title>
+<link rel="apple-touch-icon" href="">
+<link rel="stylesheet" href="web/css/base_s.css">
+<script type="text/javascript" src="web/js/jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper" class="dispatch">
+
+<div id="container">
+
+<section>
+<h2>Dispatch MobileSite</h2>
+</section>
+
+<div class="info">
+ようこそStaticUserさん<br/>
+下記メニューから操作して下さい。<br/>
+</div>
+
+<!-- IPカメラ Live映像 -->
+<section>
+	<h3 class="menu">■IPカメラ Live映像■</h3>
+</section>
+
+<div id=video_player></div>
+
+
+
+
+<div id="video_menu">
+
+<section>
+	<h3 class="menu">■Live映像コントロール■</h3>
+</section>
+
+<ul>
+<li class="form"><!--<label for="bps" class="select">bitrate :</label>-->
+	<select class="video_control" name="bps">
+		<option value="0">--bitrate--</option>
+		<option value="1">32kbps</option>
+		<option value="2">64kbps</option>
+		<option value="3">128kbps</option>
+		<option value="4">256kbps</option>
+		<option value="5">512kbps</option>
+		<option value="6">768kbps</option>
+		<option value="7">1024kbps</option>
+	</select></li>
+<li class="form"><!--<label for="tor" class="select">framerate :</label>-->
+	<select class="video_control" name="tor">
+		<option value="0">--framerate--</option>
+		<option value="1">1fps</option>
+		<option value="2">2fps</option>
+		<option value="3">3fps</option>
+		<option value="4">4fps</option>
+		<option value="5">5fps</option>
+		<option value="6">6fps</option>
+		<option value="7">8fps</option>
+		<option value="7">10fps</option>
+		<option value="7">15fps</option>
+		<option value="7">30fps</option>
+	</select></li>
+<li class="form"><!--<label for="rscl" class="select">resolution:</label>-->
+	<select class="video_control" name="rscl">
+		<option value="0">--resolution--</option>
+		<option value="1">8</option>
+		<option value="2">4</option>
+		<option value="3">2</option>
+	</select></li>
+</ul>
+
+<a id="changeParameter" class="btnTypeA" href="#" >各種パラメータを指定して実行</a>
+
+</div>
+
+
+<section>
+	<h3 class="menu">■配信先選択■</h3>
+</section>
+
+
+
+<div id="select_item">
+
+<ul>
+<li class="form"><label for="dispatch" class="select">DispatchServer:</label><select class="category" name="dispatch"></select></li>
+<li class="form"><label for="rsm" class="select">RSM Ad Server:</label><select class="category" name="rsm" disabled></select></li>
+<li class="form"><label for="device" class="select">Camera_Device:</label><select class="category" name="device" disabled></select></li>
+</ul>
+</div>
+
+<table border="1" class="playTable"></table>
+
+<div id="button"></div>
+
+</div>
+
+</br>
+
+<footer>
+<ul>
+<li class="copyright"><address>Copyright 2013  VSS All rights reserved.</address></li>
+</ul>
+</footer>
+
+</div>
+
+<script type="text/javascript" src="web/js/xml_ajax_static.js"></script>
+
+</body>
+</html>
